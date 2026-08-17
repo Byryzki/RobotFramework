@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.12 on linux)" generated="2026-08-14T20:57:53.585665" rpa="false" schemaversion="5">
+<suite id="s1" name="Challenge" source="/home/bryy/Projects/robotti/course1.2/Tests/challenge.robot">
+<test id="s1-t1" name="Should be able to access &quot;Teams&quot; page" line="14">
+<kw name="Start Browser" owner="Common" type="SETUP">
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-08-14T20:57:53.837955" elapsed="0.000255"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-08-14T20:57:53.838552" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-08-14T20:57:53.838364" elapsed="19.482019"/>
+</kw>
+<status status="PASS" start="2026-08-14T20:57:53.837321" elapsed="19.483226"/>
+</kw>
+<kw name="Go To Home Page" owner="ChallengeApp">
+<kw name="Go To Home Page" owner="Home">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-08-14T20:58:13.321673" level="INFO">Opening url 'https://automationplayground.com/front-office/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-08-14T20:58:13.321519" elapsed="2.493391"/>
+</kw>
+<kw name="Verify Page Loaded" owner="Home">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${HOME_HEADER_TEXT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-08-14T20:58:15.815862" elapsed="0.019224"/>
+</kw>
+<status status="PASS" start="2026-08-14T20:58:15.815442" elapsed="0.019986"/>
+</kw>
+<status status="PASS" start="2026-08-14T20:58:13.321290" elapsed="2.514312"/>
+</kw>
+<kw name="Verify Page Loaded" owner="Home">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${HOME_HEADER_TEXT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-08-14T20:58:15.837359" elapsed="0.008547"/>
+</kw>
+<status status="PASS" start="2026-08-14T20:58:15.836403" elapsed="0.009612"/>
+</kw>
+<status status="PASS" start="2026-08-14T20:58:13.320908" elapsed="2.525172"/>
+</kw>
+<kw name="Go To Team Page" owner="ChallengeApp">
+<kw name="Verify &quot;TEAM&quot; Button Exists" owner="TopNav">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${TEAM_BUTTON}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-08-14T20:58:15.846990" elapsed="0.011983"/>
+</kw>
+<status status="PASS" start="2026-08-14T20:58:15.846717" elapsed="0.012424"/>
+</kw>
+<kw name="Click &quot;TEAM&quot; Button" owner="TopNav">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2026-08-14T20:58:15.861172" level="INFO">Clicking link 'Team'.</msg>
+<arg>${TEAM_BUTTON}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2026-08-14T20:58:15.860053" elapsed="0.095022"/>
+</kw>
+<status status="PASS" start="2026-08-14T20:58:15.859427" elapsed="0.095809"/>
+</kw>
+<status status="PASS" start="2026-08-14T20:58:15.846378" elapsed="0.108921"/>
+</kw>
+<kw name="Exit Browser" owner="Common" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-08-14T20:58:15.956063" elapsed="0.064687"/>
+</kw>
+<status status="PASS" start="2026-08-14T20:58:15.955743" elapsed="0.065242"/>
+</kw>
+<doc>Testing if "TEAM" page is accessible</doc>
+<tag>1001</tag>
+<tag>Smoke</tag>
+<status status="PASS" start="2026-08-14T20:57:53.836396" elapsed="22.184819"/>
+</test>
+<test id="s1-t2" name="&quot;Team&quot; page should match requirements" line="20">
+<kw name="Start Browser" owner="Common" type="SETUP">
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-08-14T20:58:16.022809" elapsed="0.000230"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-08-14T20:58:16.023383" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-08-14T20:58:16.023176" elapsed="0.624420"/>
+</kw>
+<status status="PASS" start="2026-08-14T20:58:16.022289" elapsed="0.625461"/>
+</kw>
+<kw name="Go To Home Page" owner="ChallengeApp">
+<kw name="Go To Home Page" owner="Home">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-08-14T20:58:16.648964" level="INFO">Opening url 'https://automationplayground.com/front-office/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-08-14T20:58:16.648791" elapsed="2.213788"/>
+</kw>
+<kw name="Verify Page Loaded" owner="Home">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${HOME_HEADER_TEXT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-08-14T20:58:18.863366" elapsed="0.017582"/>
+</kw>
+<status status="PASS" start="2026-08-14T20:58:18.863003" elapsed="0.018190"/>
+</kw>
+<status status="PASS" start="2026-08-14T20:58:16.648471" elapsed="2.232793"/>
+</kw>
+<kw name="Verify Page Loaded" owner="Home">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${HOME_HEADER_TEXT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-08-14T20:58:18.882001" elapsed="0.009802"/>
+</kw>
+<status status="PASS" start="2026-08-14T20:58:18.881616" elapsed="0.010372"/>
+</kw>
+<status status="PASS" start="2026-08-14T20:58:16.648088" elapsed="2.243972"/>
+</kw>
+<kw name="Go To Team Page" owner="ChallengeApp">
+<kw name="Verify &quot;TEAM&quot; Button Exists" owner="TopNav">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${TEAM_BUTTON}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-08-14T20:58:18.893818" elapsed="0.014899"/>
+</kw>
+<status status="PASS" start="2026-08-14T20:58:18.893253" elapsed="0.015754"/>
+</kw>
+<kw name="Click &quot;TEAM&quot; Button" owner="TopNav">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2026-08-14T20:58:18.910692" level="INFO">Clicking link 'Team'.</msg>
+<arg>${TEAM_BUTTON}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2026-08-14T20:58:18.910022" elapsed="0.095720"/>
+</kw>
+<status status="PASS" start="2026-08-14T20:58:18.909475" elapsed="0.096505"/>
+</kw>
+<status status="PASS" start="2026-08-14T20:58:18.892491" elapsed="0.113585"/>
+</kw>
+<kw name="Team Header Is Correct" owner="ChallengeApp">
+<kw name="Verify Page Loaded" owner="Team">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${TEAM_PAGE_HEADER}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-08-14T20:58:19.007891" elapsed="0.017190"/>
+</kw>
+<status status="PASS" start="2026-08-14T20:58:19.007193" elapsed="0.018127"/>
+</kw>
+<status status="PASS" start="2026-08-14T20:58:19.006630" elapsed="0.018761"/>
+</kw>
+<kw name="Exit Browser" owner="Common" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-08-14T20:58:19.027427" elapsed="0.072717"/>
+</kw>
+<status status="PASS" start="2026-08-14T20:58:19.026339" elapsed="0.074140"/>
+</kw>
+<doc>Testing if "TEAM" page is according to spec</doc>
+<tag>1002</tag>
+<tag>Smoke</tag>
+<status status="PASS" start="2026-08-14T20:58:16.021659" elapsed="3.079050"/>
+</test>
+<status status="PASS" start="2026-08-14T20:57:53.586768" elapsed="25.514950"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">1001</stat>
+<stat pass="1" fail="0" skip="0">1002</stat>
+<stat pass="2" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat name="Challenge" id="s1" pass="2" fail="0" skip="0">Challenge</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
